@@ -1,0 +1,75 @@
+#MinistriesList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 5%;
+}
+
+.ministriesListContainer {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.ministriesListCard {
+    position: relative;
+    height: 20em;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.ministriesCardImage {
+    height: 100%;
+    width: 100%;
+
+    .ministriesCardImg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-color: burlywood;
+
+    }
+}
+
+.ministriesCardInfo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+
+   
+
+    .ministriesCardLeft {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        justify-content: space-between;
+        padding: 20px;
+
+        .ministriesTag {
+            font-size: 1.5em;
+        }
+        .more {
+            height: 2em;
+            width: fit-content;
+            background: none;
+            border: none;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+    }
+}

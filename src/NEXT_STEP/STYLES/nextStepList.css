@@ -1,0 +1,61 @@
+#NextStepList {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 5%;
+}
+
+.nextStepContainer {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  /* border: 1px solid red; */
+}
+
+.nextStepCard {
+  height: 25em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  /* background-color: rgba(196, 255, 249, 0.3); */
+  background-color: white;
+  border-radius: 10px;
+
+  .nextStepCardLeft {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+
+    .cardLeftImage {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      background-color: goldenrod;
+    }
+  }
+  .nextStepCardRight {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+
+    .cardRightHeaderText {
+      font-size: 2em;
+    }
+  }
+}
+
+.nextStepCard:nth-child(even) {
+  height: 25em;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,33 @@
+#DayVerse {
+  position: relative;
+  height: 5em;
+  width: 100%;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(196, 227, 253);
+  background-color: #023047;
+  color: white;
+}
+
+.verseContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+    white-space: nowrap; 
+  font-size: 24px;
+  animation: scroll-left 50s linear infinite;
+}
+
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(140%);
+  }
+  to {
+    transform: translateX(-140%);
+  }
+}

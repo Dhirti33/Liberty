@@ -1,0 +1,49 @@
+#contactFooter {
+    /* height: 50vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+
+    padding: 100px 5%;
+}
+
+.contactFooterContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.liveStream {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    .streamBTN {
+        height: 2em;
+        background-color: goldenrod;
+        border: none;
+    }
+}
+
+.footerLogoImg {
+    height: 6em;
+    width: 10em;
+}
+
+.footerBottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 10px;
+
+}

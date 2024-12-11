@@ -1,0 +1,50 @@
+#missionLeadership {
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 100px 5%;
+}
+
+.leadershipHeaderText {
+    font-size: 3em;
+}
+
+.leadershipContainer {
+    height: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+
+    .leadershipCard {
+        display: flex;
+        flex-direction: column;
+        height: 15em;
+
+        .leadershipImage {
+            height: 85%;
+            width: 100%;
+            object-fit: cover;
+            background-color: aquamarine;
+
+            transition: filter 0.5s ease-in;
+        }
+        .leadershipImage:hover{
+            filter: grayscale(0);
+        }
+
+        .leadershipName {
+            height: 15%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1282A2;
+            color: white;
+        }
+    }
+}

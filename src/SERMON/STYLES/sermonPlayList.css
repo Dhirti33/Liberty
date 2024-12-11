@@ -1,0 +1,64 @@
+#SermonPlayList {
+  /* height: 100vh; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 100px 5%;
+}
+
+.sermonContainer {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+
+  .sermonCard {
+    height: 25em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+
+    .sermonImage {
+      height: 50%;
+      width: 100%;
+      border-radius: 10px;
+      background-color: goldenrod;
+      overflow: hidden;
+
+      & > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .sermonDate {
+      font-size: medium;
+    }
+    .sermonTitle {
+      font-size: 1.5em;
+    }
+    .sermonPlay {
+      display: flex;
+      gap: 0.5em;
+
+      & > button {
+        height: 2.5em;
+        width: 2.5em;
+        background-color: aliceblue;
+        border-radius: 50%;
+        border: none;
+
+        & > i {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

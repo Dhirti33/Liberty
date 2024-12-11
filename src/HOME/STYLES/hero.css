@@ -1,0 +1,92 @@
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  & > div {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0 100px 5%;
+  gap: 1em;
+
+  & > .headerText {
+    font-size: 2.5em;
+    font-family: "EXPERIENCE";
+    font-style: italic;
+  }
+  & > .subHeaderText {
+    width: 90%;
+    font-size: 4.4em;
+    font-family: "H1";
+    line-height: 1.1em;
+  }
+  & > .subText {
+    font-size: 0.9em;
+  }
+  & > .heroLink {
+    display: flex;
+    align-items: center;
+
+    & > .heroLinkLine {
+        border: 1px solid #219EBC;
+        height: 2px;
+        width: 5em;
+    }
+
+    & > .heroLinkText {
+        padding-left: 10px;
+        font-size: 0.8em;
+    }
+  }
+}
+
+.heroLinkButton {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border: 2px solid #219EBC;
+  padding: 5px;
+
+  & > button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: #FB8500;
+    color: white;
+  }
+}
+
+.heroRight {
+  & > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.heroRight::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
+}

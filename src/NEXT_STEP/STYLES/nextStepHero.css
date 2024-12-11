@@ -1,0 +1,37 @@
+#NextStepHero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.NextStepHeroImage {
+    height: 100%;
+    width: 100%;
+
+    .NextStepImage {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-color: burlywood;
+
+    }
+}
+
+.NextStepHeroHead {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    padding: 100px 5%;
+
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+
+    .NextStepHeroHeadText {
+        font-size: 4em;
+    }
+}

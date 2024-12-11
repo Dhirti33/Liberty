@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Medium';
+    src: url(../FONTS/Satoshi-Medium.otf);
+    font-weight: 900;
+    font-display: swap;
+    font-style: italic;
+  }
+
+#navBar {
+    height: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: white;
+    transition: background-color 0.25s ease-in;
+    padding-inline: 5%;
+
+    font-family: 'Medium';
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+
+    & > .leftNav {
+        height: 100%;
+        width: 60%;
+        padding: 10px;
+
+        .LogoContainer {
+            padding: 10px;
+            height: 100%;
+            width: 2em;
+
+            & > img {
+                height: 2em;
+                width: 2em;
+            }
+        }
+
+    }
+}
+
+#navBar.scrolled {
+    background-color: white;
+    color: black;
+}
+
+.rightNav {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+    transition: color 1s ease-in;
+
+    z-index: 2;
+
+    .tab {
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        color: white;
+        /* font-weight: 600; */
+    }
+
+    & > .tab:is(:hover,:focus) {
+        color: #FB8500;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .tab.scrolled {
+        color: black;
+    }
+    .tab.scrolled:is(:hover,:focus) {
+        color: #FB8500;
+    }
+}

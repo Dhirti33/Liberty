@@ -1,0 +1,40 @@
+#MissionHero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.missionHeroImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: aqua;
+}
+
+.missionHeroInfo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: left;
+    padding: 100px;
+
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+
+    .missionHeroContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: left;
+        text-align: left;
+        gap: 1em;
+
+        .missionHeroHeaderText {
+            font-size: 4em;
+        }
+    }
+}

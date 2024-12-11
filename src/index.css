@@ -1,0 +1,18 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  scrollbar-width: thin;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  scroll-behavior: smooth;
+  height: 100svh;
+}

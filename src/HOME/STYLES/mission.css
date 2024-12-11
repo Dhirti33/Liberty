@@ -1,0 +1,113 @@
+#Mission {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: aquamarine;
+}
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    & > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: grayscale(100%);
+    }
+
+    & > .imageHover{
+        position: absolute;
+        inset: 0;
+        background-color: rgba(255,255,255,0.6)
+    }
+}
+
+.imageContainer::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    /* background-image: radial-gradient(transparent,white 70%); */
+    background-image: linear-gradient(to bottom, white 30%, transparent);
+    z-index: 1;
+}
+
+.imageContainer::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background-image: linear-gradient(to top, rgba(255, 255, 255) 0.5%, transparent 100%);
+    z-index: 1;
+}
+
+.missionContainer {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 100px 5%;
+
+    z-index: 2;
+
+    & > .missionHeadText {
+        font-size: 1em;
+    }
+    & > .missionHeadSubText {
+        font-size: 2em;
+    }
+}
+
+.missionInfo {
+    height: 80%;
+    width: 80%;
+    /* border: 1px solid goldenrod; */
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 30px 50px 50px rgba(0,0,0,0.1);
+    /* border-radius: 0px 0px 20px 20px; */
+    background-color: white;
+
+    & > div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        
+
+        .infoLeftHead {
+            font-size: 2em;
+        }
+        .infoLeftSubText {
+            font-size: 0.7em;
+        }
+        .readMore{
+            width: 7em;
+            height: 2em;
+            border: none;
+            border-bottom: black 2px solid;
+            background: none;
+            font-weight: 600;
+        }
+        .readMore:hover {
+            color: red;
+        }
+        .missionInfoImage {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

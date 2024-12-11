@@ -1,0 +1,63 @@
+#QuickAccess {
+    /* height: 200vh; */
+    width: 100%;
+    padding: 100px 5%;
+}
+
+.quickAccessContainer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+
+}
+
+.accessContainer {
+    height: 30em;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+}
+
+.accessImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: cadetblue;
+    /* filter: grayscale(100); */
+}
+
+.accessInfoContainer {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   gap: 1em;
+   padding: 20px;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* backdrop-filter: blur(2px); */
+
+   .accessInfoHeadText {
+    font-size: 2em;
+   }
+   .accessInfoSubText {
+    font-size: 0.8em;
+   }
+   .accessInfoBTN {
+    height: 2em;
+    width: fit-content;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 600;
+   }
+   
+}
